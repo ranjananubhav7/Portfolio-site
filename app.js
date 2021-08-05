@@ -33,6 +33,6 @@ app.get("/python", function(req, res){
   res.render("skill", {DESCRIPTION: description, PROJECTS: projects});
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("app is listening on port 3000");
 });
