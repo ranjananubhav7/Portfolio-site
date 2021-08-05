@@ -1,0 +1,28 @@
+{
+  "name": "css---my-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anubhav7298/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anubhav7298/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Anubhav7298/Portfolio#readme",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "gsap": "^3.7.1",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^2.0.12"
+  }
+}

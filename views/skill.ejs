@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="skillStyle.css">
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <p class="description"><%=DESCRIPTION%></p>
+    <hr>
+    <h1 class="title">Some of my projects include</h1>
+    <div class="box">
+      <ul>
+          <% for(var i=0;  i<PROJECTS.length ; i++) { %>
+            <li>
+            <div class="card skillCard" style="width: 18rem;">
+    <img src=<%=PROJECTS[i][0]%> style="height: 450px;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%=PROJECTS[i][1]%></h5>
+      <p class="card-text"><%=PROJECTS[i][2]%></p>
+      <a href=<%=PROJECTS[i][3]%> class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </li>
+          <% } %>
+      </ul>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>You can call me on :</h3>
+          <p>+91 8709902491</p>
+          <a class="btn btn-outline-warning" href="mailto:ranjananubhav7@email.com">Mail me</a>
+        </div>
+      </div>
+
+
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/anubhav-ranjan-223b73129/"><img src="\images\linkedin (1).png" alt="linkedin"/></a>
+        <a class="footer-link" href="https://twitter.com/AnubhavRanjan17?s=08"><img src="\images\twitter.png" alt="twitter"/></a>
+        <a class="footer-link" href="https://www.instagram.com/anubhav_072//"><img src="\images\instagram.png" alt="instagram"/></a>
+        <a class="footer-link" href="https://github.com/ranjananubhav7"><img style="height: 24px; width: 24px; border-radius: 12px;" src="\images\github.png" alt="github"/></a>
+        <p class="footer-txt">© 2021 Anubhav Ranjan.</p>
+      </div>
+  </body>
+</html>
